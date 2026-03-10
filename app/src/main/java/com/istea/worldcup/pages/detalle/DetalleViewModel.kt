@@ -39,12 +39,11 @@ class DetalleViewModel(
                     uiState = DetalleState.Resultado(grupo = it)
                 }
             } catch (e: Exception) {
-                uiState = DetalleState.Error(mensaje = "Error al cargar el contenido")
+                uiState = DetalleState.Error(mensaje = "Error al cargar")
             }
         }
+     }
     }
-}
-
 
 class DetalleViewModelFactory(
     private val repositorio: Repository,
